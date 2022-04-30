@@ -4,10 +4,6 @@ import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponent
 import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection } from './HeroStyles';
 
-const learnMoreHandler = () => {
-  return window.location = "projects"
-}
-
 const Hero = (props) => (
   <Section>
     <LeftSection>
@@ -17,7 +13,7 @@ const Hero = (props) => (
       <SectionText>
         I am a Junior Web Developer based in Berlin, Germany.
       </SectionText>
-      <Button onclick={learnMoreHandler}>Learn More</Button>
+      <Button onClick={props.onLearnMore}>Learn More</Button>
     </LeftSection>
   </Section>
 );

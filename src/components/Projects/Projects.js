@@ -4,9 +4,10 @@ import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag,
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
 import { AiOutlineTeam } from 'react-icons/ai';
+import { useRef } from "react";
 
-const Projects = () => (
-  <Section  id="projects">
+const Projects = (props) => (
+  <Section  id="projects" ref={props.refProp}>
     <SectionDivider />
     <SectionTitle main>Projects</SectionTitle>
     <GridContainer>

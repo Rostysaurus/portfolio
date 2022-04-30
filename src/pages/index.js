@@ -6,15 +6,24 @@ import Technologies from '../components/Technologies/Technologies';
 import Timeline from '../components/TimeLine/TimeLine';
 import { Layout } from '../layout/Layout';
 import { Section } from '../styles/GlobalComponents';
+import { useRef } from "react";
+
 
 const Home = () => {
+  const projectRef = useRef()
+
+  const learnMoreHandler = () => {
+    console.log("hi from index");
+    projectRef.current.scrollIntoView()
+  }
+
   return (
     <Layout>
       <Section grid>
-        <Hero />
+        <Hero onLearnMore={learnMoreHandler}/>
         <BgAnimation />
       </Section>
-      <Projects />
+      <Projects refProp={projectRef}/>
       <Technologies />
       <Timeline />
       {/* <Acomplishments /> */}
