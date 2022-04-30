@@ -5,7 +5,7 @@ import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection } from './HeroStyles';
 
 const learnMoreHandler = () => {
-  return window.location = "google.com"
+  return window.location = "projects"
 }
 
 const Hero = (props) => (

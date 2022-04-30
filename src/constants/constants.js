@@ -20,13 +20,22 @@ export const projects = [
   },
   {
     title: 'Sponty',
-    description: "My team's final project - a social media app that helpw people connect over different experiences. My amazing team:",
+    description: "My team's final project - a social media app that helpw people connect over different experiences.",
     team: ["https://github.com/tagilv", "https://github.com/kingaozimek", "https://github.com/ipky"],
     image: '/images/sponty.png',
     tags: ['RoR', 'JS', 'HTML', 'Sass', 'PostgreSQL', "Heroku"],
     source: 'https://super-sponty.herokuapp.com/',
     visit: 'https://github.com/Rostysaurus/sponty',
     id: 2,
+  },
+  {
+    title: 'Dice Game',
+    description: "One of the most difficult gamnes I built when begginning my coding journey.",
+    image: '/images/dice_game.png',
+    tags: ['Vanilla JS', 'HTML', 'CSS'],
+    source: 'https://rostysaurus.github.io/Dice-Game/',
+    visit: 'https://github.com/Rostysaurus/Dice-Game',
+    id: 3,
   }
 ];
 
